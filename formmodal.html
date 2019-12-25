@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Form Modal</title>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+    <header class="main-header">
+        <nav class="navbar navbar-light navbar-expand-lg py-3 shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <!-- Logo Image -->
+                    <img src="logo.png" height="54.17px" width="130">
+                </a>
+
+                <!-- Button on header -->
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">How it works<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="https://dev.redribbon.ng/browse" class="nav-link">Browse</a></li>
+                        <li class="nav-item"><a href="https://dev.redribbon.ng/redeem" class="nav-link">Redeem</a></li>
+                        <li class="nav-item"><a href="https://dev.redribbon.ng/login" class="nav-link">Sign up/Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <center>
+                <form action="w">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold">Please Enter Your Gift Code</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
+                    </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <label data-error="wrong" data-success="right" for="defaultForm-email">Your code</label>
+                                    <input type="text" id="defaultForm-email" class="form-control validate" required>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button style="background-color: #B11116 !important;color: white;" data-toggle="modal" class="btn btn-primary">Redeem</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </form>
+
+
+
+                <div style="padding-top: 150px !important;" class="modal" id="myModal">
+                    <div class="modal-dialog ">
+                        <div style="height: 300px !important;" class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Choose how you want to receive your funds</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="container"></div>
+                            <div style="padding-top: 50px;" class="modal-body">
+                                <a style="background-color: #B11116 !important; width: auto;" data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg btn-block">Send Virtual Card To My Email</a>
+                                <small style="float: left;"><i>*receive card in the next 10-14 days</i></small>
+                            </div>
+                            <div style="padding-bottom: 10px;">
+                                <small style="color: red !important;">**you will be charged #50 for this service</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </center>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script>
+            $('#openBtn').click(function() {
+                $('#myModal').modal({
+                    show: true
+                });
+            })
+        </script>
+
+</body>
+
+</html>
