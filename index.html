@@ -165,10 +165,10 @@
             .then(data => {
 
                 if (data.status === "failure" && data.message === "Invalid gift card code") {
-                    let submitButton = document.querySelector("#submit-btn ")
+                    let submitButton = document.querySelector("#submit-btn")
                     console.log(data)
                     document.querySelector('#myModal').style.display = "none"
-                    document.querySelector("#error ").style.display = "block"
+                    document.querySelector("#error").style.display = "block"
                 } else
                     document.querySelector('#myModal').style.display = "block";
             }).catch(err => {
@@ -185,8 +185,8 @@
                 },
                 body: JSON.stringify({
                     giftcard_code: document.querySelector('#mygiftcode').value,
-                    name: document.querySelector("#nameOnCard ").value,
-                    email: document.querySelector("#deliveryEmail ").value
+                    name: document.querySelector("#nameOnCard").value,
+                    email: document.querySelector("#deliveryEmail").value
                 })
             });
             const content = await rawResponse.json();
