@@ -166,7 +166,6 @@
 
                 if (data.status === "failure" && data.message === "Invalid gift card code") {
                     let submitButton = document.querySelector("#submit-btn")
-                    console.log(data)
                     document.querySelector('#myModal').style.display = "none"
                     document.querySelector("#error").style.display = "block"
                 } else
