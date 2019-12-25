@@ -164,13 +164,13 @@
             .then(res => res.json())
             .then(data => {
 
-                if (data.status === "failure " && data.message === "Invalid gift card code ") {
+                if (data.status === "failure" && data.message === "Invalid gift card code") {
                     let submitButton = document.querySelector("#submit-btn ")
                     console.log(data)
-                    document.querySelector('#myModal').style.display = "none "
-                    document.querySelector("#error ").style.display = "block "
+                    document.querySelector('#myModal').style.display = "none"
+                    document.querySelector("#error ").style.display = "block"
                 } else
-                    document.querySelector('#myModal').style.display = "block ";
+                    document.querySelector('#myModal').style.display = "block";
             }).catch(err => {
                 console.log(err)
             })
