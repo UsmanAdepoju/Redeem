@@ -37,122 +37,120 @@
 
 
 
-    <header class="main-header">
-        <nav class="navbar navbar-light navbar-expand-lg py-3 shadow-sm">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <!-- Logo Image -->
-                    <img src="logo.png" height="54.17px" width="130">
-                </a>
-
-                <!-- Button on header -->
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
-                <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a href="index.html" class="nav-link">How it works<span class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a href="https://dev.redribbon.ng/browse" class="nav-link">Browse</a></li>
-                        <li class="nav-item"><a href="https://dev.redribbon.ng/redeem" class="nav-link">Redeem</a></li>
-                        <li class="nav-item"><a href="https://dev.redribbon.ng/login" class="nav-link">Sign up/Login</a></li>
-                    </ul>
-                </div>
+    <nav style="width: auto;" class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="logo.png" height="54.17px" width="130">
+            </a>
+            <!-- Button on header -->
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">How it works<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="https://dev.redribbon.ng/browse" class="nav-link">Browse</a></li>
+                    <li class="nav-item"><a href="https://dev.redribbon.ng/redeem" class="nav-link">Redeem</a></li>
+                    <li class="nav-item"><a href="https://dev.redribbon.ng/login" class="nav-link">Sign up/Login</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
 
 
 
 
 
-        <center style="padding-top: 100px !important;">
-            <div class="card text-center" style="width: 30em !important;">
-                <div class="card-header">
-                    <h4 class="card-title">Please Enter Your Gift Code</h4>
-                </div>
-                <div class="card-body">
-                    <form id="submit-form" onsubmit="event.preventDefault(); redeem()">
-                        <div class="form-group">
-                            <label for="inputcode">Your Code</label>
-                            <input id="mygiftcode" type="text" class="form-control" id="giftcode" required>
-                        </div>
-                        <div id="error" class="alert alert-danger collapse" role="alert">
-                            Invalid gift card code
-                        </div>
-                        <button id="submit-btn" style="background-color: #B11116 !important;color: white;" data-toggle="modal" class="btn btn-primary" type="submit">Redeem</button>
-                    </form>
+    <center style="padding-top: 100px !important;">
+        <div class="card text-center" style="width: 25em !important;">
+            <div class="card-header">
+                <h4 class="card-title">Please Enter Your Gift Code</h4>
+            </div>
+            <div class="card-body">
+                <form id="submit-form" onsubmit="event.preventDefault(); redeem()">
+                    <div class="form-group">
+                        <label for="inputcode">Your Code</label>
+                        <input id="mygiftcode" type="text" class="form-control" id="giftcode" required>
+                    </div>
+                    <div id="error" class="alert alert-danger collapse" role="alert">
+                        Invalid gift card code
+                    </div>
+                    <button id="submit-btn" style="background-color: #B11116 !important;color: white;" data-toggle="modal" class="btn btn-primary" type="submit">Redeem</button>
+                </form>
 
 
 
-                    <div style="padding-top: 150px !important;" class="modal" id="myModal">
-                        <div class="modal-dialog ">
-                            <div style="height: 300px !important;" class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Choose how you want to receive your funds</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="container"></div>
-                                <div style="padding-top: 50px;" class="modal-body">
-                                    <a style="background-color: #B11116 !important; width: auto;color: white;" data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg btn-block">Send Virtual Card To My Email</a>
-                                    <small style="float: left;"><i>*receive card in the next 10-14 days</i></small>
-                                </div>
-                                <div style="padding-bottom: 10px;">
-                                    <small style="color: red !important;">**you will be charged #50 for this service</small>
-                                </div>
+                <div style="padding-top: 150px !important;" class="modal" id="myModal">
+                    <div class="modal-dialog ">
+                        <div style="height: 300px !important;" class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Choose how you want to receive your funds</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="container"></div>
+                            <div style="padding-top: 50px;" class="modal-body">
+                                <a style="background-color: #B11116 !important; width: auto;color: white;" data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg btn-block">Send Virtual Card To My Email</a>
+                                <small style="float: left;"><i>*receive card in the next 10-14 days</i></small>
+                            </div>
+                            <div style="padding-bottom: 10px;">
+                                <small style="color: red !important;">**you will be charged #50 for this service</small>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
-                    <div style="padding-top: 120px !important;" class="modal" id="myModal2" data-backdrop="static">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
+                <div style="padding-top: 120px !important;" class="modal" id="myModal2" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
 
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="container">
-                                    <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="container">
+                                <div class="modal-body">
+                                    <div>
                                         <div>
-                                            <div>
-                                                <img style="height: 178px; width: 336px; padding-bottom: 10px;" src="Card.png" class="card-img-top" alt="..."></div>
-                                            <h6><i style="padding-bottom: 20px;" class="modal-title">Preview</i></h6>
+                                            <img style="height: 178px; width: 336px; padding-bottom: 10px;" src="Card.png" class="card-img-top" alt="..."></div>
+                                        <h6><i style="padding-bottom: 20px;" class="modal-title">Preview</i></h6>
 
-                                            <form onsubmit=" event.preventDefault(); virtualCard()">
-                                                <label style="float: left;" for="exampleInputEmail1">Name</label>
-                                                <input type="name" class="form-control" id="nameOnCard" aria-describedby="nameHelp" required><br>
-                                                <label style="float: left;" for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" id="deliveryEmail" aria-describedby="emailHelp" required>
-                                        </div><br>
-                                        <button style="background-color: #B11116 !important;color: white;" type="submit" class="btn btn-primary ">Submit</button><br><br>
-                                        <div id="success" class="alert alert-success collapse" role="alert">
-                                            A virtual card has been sent to your e-mail!
-                                        </div>
-                                        <button id="home" href="index.html" type="button" class="btn btn-primary collapse">Ok</button>
-
-                                        </form>
-
-
-
+                                        <form onsubmit=" event.preventDefault(); virtualCard()">
+                                            <label style="float: left;" for="exampleInputEmail1">Name</label>
+                                            <input type="name" class="form-control" id="nameOnCard" aria-describedby="nameHelp" required><br>
+                                            <label style="float: left;" for="exampleInputEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="deliveryEmail" aria-describedby="emailHelp" required>
+                                    </div><br>
+                                    <button style="background-color: #B11116 !important;color: white;" type="submit" class="btn btn-primary ">Submit</button><br><br>
+                                    <div id="success" class="alert alert-success collapse" role="alert">
+                                        A virtual card has been sent to your e-mail!
                                     </div>
+                                    <button id="home" href="index.html" type="button" class="btn btn-primary collapse">Ok</button>
+
+                                    </form>
+
+
 
                                 </div>
+
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
+
             </div>
-        </center>
+
+        </div>
+    </center>
 
 
-        <script>
-            $('#openBtn').click(function() {
-                $('#myModal').modal({
-                    show: true
-                });
-            })
-        </script>
+    <script>
+        $('#openBtn').click(function() {
+            $('#myModal').modal({
+                show: true
+            });
+        })
+    </script>
 
 </body>
 
